@@ -1,10 +1,10 @@
-const { refreshCookies, parseCookies } = require('./cookies.cjs')
+const { refreshCookiesV2 } = require('./cookies.cjs')
 const { readFileSync } = require('fs')
 
 const baseUrl = "https://www.ryanair.com/api/booking/v4/pl-pl/availability"
 
 async function getCitiesData(citiesRequest) {
-    const cookies = await refreshCookies().then(parseCookies)
+    const cookies = await refreshCookiesV2()
     const requestData = JSON.parse(readFileSync('./config.json', 'utf8'))['getRequestData']
     requestData['headers']['cookie'] = cookies
 

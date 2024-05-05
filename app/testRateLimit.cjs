@@ -13,7 +13,7 @@ async function testRateLimit() {
     let requestData = JSON.parse(readFileSync('./config.json', 'utf8'))['getRequestData']
     requestData['headers']['cookie'] = cookies
 
-    let requestRatePerSecond = 1
+    let requestRatePerSecond = 0.1
 
     let requestsSinceLastBackoff = 0
 
@@ -33,6 +33,7 @@ async function testRateLimit() {
             const response = await fetch(testUrl, requestData)
             if (response.status === 200) {
                 requestsSinceLastBackoff += 1
+                console.log(`${new Date().toJSON()}: Request count: ${requestsSinceLastBackoff}`)
             } else {
                 await onBackoff()
             }

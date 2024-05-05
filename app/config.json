@@ -20,5 +20,8 @@
         },
         "body": null,
         "method": "GET"
-    }
+    },
+    "awsRegions": [
+        "eu-north-1"
+    ]
 }
