@@ -1,6 +1,6 @@
 const logger = require('./log.cjs')
 const { APIGatewayClient, CreateRestApiCommand, CreateResourceCommand, PutMethodCommand, PutIntegrationCommand, CreateDeploymentCommand, DeleteRestApiCommand} = require('@aws-sdk/client-api-gateway')
-const { readFile, writeFile, readFileSync } = require('fs')
+const { readFile } = require('fs')
 
 const API_NAME = 'TripScannerAPI'
 const STAGE_NAME = 'test'

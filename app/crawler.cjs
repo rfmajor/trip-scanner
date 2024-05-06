@@ -1,17 +1,13 @@
-const { refreshCookiesV2 } = require('./cookies.cjs')
+const { refreshCookies } = require('./cookies.cjs')
 const { readFileSync } = require('fs')
 const logger = require('./log.cjs')
 const { MAX_REQUESTS_PER_PROXY, proxies } = require('./gateways.cjs')
 
-const baseUrl = "https://www.ryanair.com/api/booking/v4/pl-pl/availability"
 const AVAILABILITY_URL = "/api/booking/v4/pl-pl/availability"
-// const COOKIE_DEFAULT_URL = 'https://www.ryanair.com/pl/pl/trip/flights/select'
 const COOKIE_URL = '/pl/pl/trip/flights/select'
 
 async function getTripsData(tripsRequest) {
-    // const cookies = await refreshCookiesV2(COOKIE_DEFAULT_URL)
     const requestData = JSON.parse(readFileSync('./config.json', 'utf8'))['getRequestData']
-    //requestData['headers']['cookie'] = cookies
 
     const partialRequests = Array.from(tripsRequest['cities']).map(city => {
         const partialRequest = {}
@@ -31,16 +27,6 @@ async function getTripsData(tripsRequest) {
     })
 
     return fetchCitiesUsingProxies(partialRequests, requestData).then(responses => responses.flat().map(getTripsFromResponse).flat())
-    /* return Promise.all(
-        partialRequests.map(partialRequest => fetchOneCity(partialRequest, requestData))
-    ).then(responses => responses.map(getTripsFromResponse).flat()) */
-}
-
-async function fetchOneCity(cityRequest, requestData) {
-    const url = addRequestParameters(baseUrl, cityRequest);
-    return fetch(url, requestData).then(function (response) {
-        return response.json();
-    })
 }
 
 async function fetchCitiesUsingProxies(cityRequests, requestCommonData) {
@@ -52,23 +38,12 @@ async function fetchCitiesUsingProxies(cityRequests, requestCommonData) {
         cityRequests = cityRequests.slice(0, maxRequests)
     }
 
-    const requestsPerProxy = Math.floor(cityRequests.length / regions.length)
-    const leftoverRequests = cityRequests.length - requestsPerProxy * regions.length
-    const requestDistribution = Array(leftoverRequests).fill(requestsPerProxy + 1).concat(Array(regions.length - leftoverRequests).fill(requestsPerProxy)) 
-    const splitCityRequests = []
-
-    let startIndex = 0
-    let endIndex = 0
-    for (let i = 0; i < regions.length; i++) {
-        endIndex += requestDistribution[i]
-        splitCityRequests.push(cityRequests.slice(startIndex, endIndex))
-        startIndex += requestDistribution[i]
-    }
+    const splitCityRequests = distributeItemsEvenly(cityRequests, regions.length)
 
     const fetchCitiesForProxy = async (cityRequests, proxy) => {
         const cookieUrl = proxy['url'] + COOKIE_URL
         const requestData = {...requestCommonData}
-        requestData['headers']['cookie'] = await refreshCookiesV2(cookieUrl)
+        requestData['headers']['cookie'] = await refreshCookies(cookieUrl)
 
         const endpointUrl = proxy['url'] + AVAILABILITY_URL
 
@@ -94,6 +69,30 @@ async function fetchCitiesUsingProxies(cityRequests, requestCommonData) {
             fetchCitiesForProxy(cityRequests, proxies[regions[index]])
         ).flat()
     )
+}
+
+function distributeEvenly(number, buckets) {
+    const minNumberPerBucket = Math.floor(number / buckets)
+    const leftoverBuckets = number % buckets
+    const minNumberBuckets = buckets - leftoverBuckets
+
+    return Array(minNumberBuckets).fill(minNumberPerBucket).concat(Array(leftoverBuckets).fill(minNumberPerBucket + 1)) 
+}
+
+function splitArrayIntoChunks(array, chunksArray) {
+    let sum = 0
+    const splitArray = []
+    for (let i = 0; i < chunksArray.length; i++) {
+        const result = array.slice(sum, sum + chunksArray[i])
+        splitArray.push(result)
+        sum += chunksArray[i]
+    }
+    return splitArray
+}
+
+function distributeItemsEvenly(items, numberOfBuckets) {
+    const itemDistribution = distributeEvenly(items.length, numberOfBuckets)
+    return splitArrayIntoChunks(items, itemDistribution)
 }
 
 function addRequestParameters(baseUrl, requestData) {

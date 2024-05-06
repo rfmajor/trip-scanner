@@ -1,9 +1,7 @@
 import { getTripsData } from './crawler.cjs';
 import fs from 'fs'
-import { testRateLimit } from './testRateLimit.cjs'
 import logger from './log.cjs';
-import { createProxies, deleteProxies, deleteApiGatewayV2 } from './gateways.cjs'
-import { resolve } from 'path';
+import { createProxies, deleteProxies } from './gateways.cjs'
 import { getLowestPrice } from './scanner.cjs';
 
 
