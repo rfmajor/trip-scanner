@@ -1,48 +1,70 @@
-import { getCitiesData } from './crawler.cjs';
+import { getTripsData } from './crawler.cjs';
 import fs from 'fs'
 import { testRateLimit } from './testRateLimit.cjs'
 import logger from './log.cjs';
-import { createProxies, deleteProxies } from './gateways.cjs'
+import { createProxies, deleteProxies, deleteApiGatewayV2 } from './gateways.cjs'
+import { resolve } from 'path';
+import { getLowestPrice } from './scanner.cjs';
 
 
-try {
+const trips = JSON.parse(fs.readFileSync('./trips2.json', 'utf8'))
+
+if (trips.length === 0) {
+    try {
+        const cities = JSON.parse(fs.readFileSync('./cities.json', 'utf8'))
     
-    const cities = JSON.parse(fs.readFileSync('./cities.json', 'utf8')).slice(0, 1)
-
-    const request = {
-        "ADT": "2",
-        "TEEN": "0",
-        "CHD": "0",
-        "INF" : "0",
-        "Origin": "KRK",
-        "DateOut": "2024-05-10",
-        "promoCode": "",
-        "IncludeConnectingFlights": "false",
-        "DateIn": "",
-        "FlexDaysBeforeOut": "2",
-        "FlexDaysOut": "2",
-        "FlexDaysBeforeIn": "2",
-        "FlexDaysIn": "2",
-        "RoundTrip": "false",
-        "ToUs": "AGREED",
-        "cities": cities
-    }
-    getCitiesData(request).then(element => {
-        try {
-            fs.writeFileSync('./trips2.json', JSON.stringify(element, null, 2), {
-            encoding: "utf8",
-            flag: "a+"
-        })} catch (error) {
-            console.log(`Could not write element to file: ${JSON.stringify(element)}. Error: ${error}`)
-            throw error
+        await createProxies()
+    
+        const request = {
+            "ADT": "2",
+            "TEEN": "0",
+            "CHD": "0",
+            "INF" : "0",
+            "Origin": "KRK",
+            "DateOut": "2024-05-10",
+            "promoCode": "",
+            "IncludeConnectingFlights": "false",
+            "DateIn": "",
+            "FlexDaysBeforeOut": "3",
+            "FlexDaysOut": "3",
+            "FlexDaysBeforeIn": "3",
+            "FlexDaysIn": "3",
+            "RoundTrip": "false",
+            "ToUs": "AGREED",
+            "cities": cities
         }
-    })
-
-    logger.info('starting')
-    await createProxies()
-    await deleteProxies()
-} catch (error) {
-    logger.error('Unknown error occurred: ' + error)
+    
+        await getTripsData(request).then(element => {
+            try {
+                fs.writeFileSync('./trips2.json', JSON.stringify(element, null, 2), {
+                encoding: "utf8",
+                flag: "a+"
+            })} catch (error) {
+                console.log(`Could not write element to file: ${JSON.stringify(element)}. Error: ${error}`)
+                throw error
+            }
+        })
+        .then(() => deleteProxies())
+    } catch (error) {
+        logger.error('Error occurred: ' + error)
+        await deleteProxies()
+    } 
 }
 
+const lowestPriceTrips = getLowestPrice(trips, 10)
+console.log(lowestPriceTrips)
 
+
+
+
+/* const apis = JSON.parse(fs.readFileSync('./openAPIs.json', 'utf8'))
+for (const api of apis.flat()) {
+    await deleteApiGatewayV2(api['region'], api['restApiId']).catch(err => {
+        if (err) {
+            console.log(err)
+            console.log(api)
+        }
+    })
+    await new Promise(resolve => setTimeout(resolve, 20000))
+}
+ */

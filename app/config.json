@@ -11,17 +11,16 @@
             "sec-ch-ua-platform": "\"Linux\"",
             "sec-fetch-dest": "empty",
             "sec-fetch-mode": "cors",
-            "sec-fetch-site": "same-origin",
-            "X-Originating-IP": "127.0.0.1",
-            "X-Forwarded-For": "127.0.0.1",
-            "X-Remote-IP": "127.0.0.1",
-            "X-Remote-Addr": "127.0.0.1",
-            "Referrer-Policy": "same-origin"
+            "sec-fetch-site": "same-origin"
         },
         "body": null,
         "method": "GET"
     },
     "awsRegions": [
-        "eu-north-1"
+        "eu-north-1",
+        "eu-central-1",
+        "eu-west-1",
+        "eu-west-2",
+        "eu-west-3"
     ]
 }

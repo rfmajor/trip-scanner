@@ -1,10 +1,10 @@
 const logger = require('./log.cjs')
 const { APIGatewayClient, CreateRestApiCommand, CreateResourceCommand, PutMethodCommand, PutIntegrationCommand, CreateDeploymentCommand, DeleteRestApiCommand} = require('@aws-sdk/client-api-gateway')
-const { readFile } = require('fs')
+const { readFile, writeFile, readFileSync } = require('fs')
 
 const API_NAME = 'TripScannerAPI'
 const STAGE_NAME = 'test'
-const MAX_REQUESTS = 30
+const MAX_REQUESTS_PER_PROXY = 35
 const PROXY_URL = (restApiId, region, stageName) => `https://${restApiId}.execute-api.${region}.amazonaws.com/${stageName}`
 
 const proxies = {}
@@ -132,9 +132,24 @@ async function createApiGatewayClient(region) {
             )
 
             proxies[region] = { "restApiId": restApiId, "url": PROXY_URL(restApiId, region, STAGE_NAME) }
+            /* readFile('./openAPIs.json', 'utf8', (err, data) => {
+                if (err) {
+                    logger.error('Unable to read proxies info.\n')
+                    throw err
+                }
+                const savedProxies = JSON.parse(data)
+                savedProxies.push({"region": region, "restApiId": restApiId})
+                writeFile('./openAPIs.json', JSON.stringify(savedProxies, null, 2), err => {
+                    if (err) {
+                        logger.error('Unable to write to proxies file.\n')
+                        throw err
+                    }
+                })
+            }) */
+            
 
             logger.info(`Created API in region ${region}`)
-            resolve()
+            resolve({"region": region, "restApiId": restApiId})
         } catch (err) {
             logger.error(`Failure during API creation in ${region}:\n`, err)
             reject()
@@ -144,10 +159,15 @@ async function createApiGatewayClient(region) {
 
 async function deleteApiGateway(region) {
     logger.info(`Deleting API in ${region}`)
-    const apig = new APIGatewayClient({ region: region });
+    const apig = new APIGatewayClient({ region: region })
     return apig.send(new DeleteRestApiCommand({restApiId: proxies[region]['restApiId']}))
         .then(() => delete proxies[region])
         .catch(err => logger.error(`Failed to delete proxy in region ${region}:\n`, err))
 }
 
-module.exports = { createProxies, deleteProxies }
+async function deleteApiGatewayV2(region, id) {
+    const apig = new APIGatewayClient({ region: region });
+    return apig.send(new DeleteRestApiCommand({restApiId: id}))
+}
+
+module.exports = { createProxies, deleteProxies, MAX_REQUESTS_PER_PROXY, proxies, deleteApiGatewayV2 }
