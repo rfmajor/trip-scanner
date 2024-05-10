@@ -1,5 +1,5 @@
 const { refreshCookies, parseCookies } = require('./cookies.cjs')
-const { readFileSync } = require('fs')
+const config = require('./config.cjs')
 
 const testUrl = 'https://www.ryanair.com/api/booking/v4/pl-pl/availability?ADT=2&TEEN=0&CHD=0&INF=0&Origin=KRK&DateOut=2024-05-10&promoCode=&IncludeConnectingFlights=false&DateIn=&FlexDaysBeforeOut=2&FlexDaysOut=2&FlexDaysBeforeIn=2&FlexDaysIn=2&RoundTrip=false&ToUs=AGREED&Destination=AGA&DestinationIsMac=false&'
 let lastBackoff = new Date()
@@ -10,7 +10,7 @@ let backoffTimeMinutes = 95
 
 async function testRateLimit() {
     let cookies = await refreshCookies().then(parseCookies);
-    let requestData = JSON.parse(readFileSync('./config.json', 'utf8'))['getRequestData']
+    let requestData = {...config.requestData}
     requestData['headers']['cookie'] = cookies
 
     let requestRatePerSecond = 0.1

@@ -1,25 +1,16 @@
 const logger = require('./log.cjs')
 const { APIGatewayClient, CreateRestApiCommand, CreateResourceCommand, PutMethodCommand, PutIntegrationCommand, CreateDeploymentCommand, DeleteRestApiCommand} = require('@aws-sdk/client-api-gateway')
 const { readFile } = require('fs')
+const config = require('./config.cjs')
 
 const API_NAME = 'TripScannerAPI'
 const STAGE_NAME = 'test'
-const MAX_REQUESTS_PER_PROXY = 35
 const PROXY_URL = (restApiId, region, stageName) => `https://${restApiId}.execute-api.${region}.amazonaws.com/${stageName}`
 
 const proxies = {}
 
 async function createProxies() {
-    return new Promise((resolve, reject) => {
-        return readFile('./config.json', { encoding: 'utf8' }, (err, data) => {
-            if (err) {
-                return reject(err)
-            }
-            return resolve(data)
-        })
-    })
-        .then(config => JSON.parse(config)['awsRegions'])
-        .then(regions => Promise.all(regions.map(createApiGatewayClient)))
+    return Promise.all(config.awsRegions.map(createApiGatewayClient))
         .catch(err => logger.error(`Unknown error during API creation:\n`, err))
 }
 
@@ -170,4 +161,4 @@ async function deleteApiGatewayV2(region, id) {
     return apig.send(new DeleteRestApiCommand({restApiId: id}))
 }
 
-module.exports = { createProxies, deleteProxies, MAX_REQUESTS_PER_PROXY, proxies, deleteApiGatewayV2 }
+module.exports = { createProxies, deleteProxies, proxies, deleteApiGatewayV2 }

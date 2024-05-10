@@ -1,0 +1,2862 @@
+{
+   "AAL": {
+      "code": "AAL",
+      "country": {
+         "name": "Denmark",
+         "code": "dk",
+         "iso3Code": "DNK",
+         "currency": "DKK"
+      },
+      "city": {
+         "name": "Aalborg",
+         "isMac": false
+      }
+   },
+   "AAR": {
+      "code": "AAR",
+      "country": {
+         "name": "Denmark",
+         "code": "dk",
+         "iso3Code": "DNK",
+         "currency": "DKK"
+      },
+      "city": {
+         "name": "Aarhus",
+         "isMac": false
+      }
+   },
+   "ABZ": {
+      "code": "ABZ",
+      "country": {
+         "name": "United Kingdom",
+         "code": "gb",
+         "iso3Code": "GBR",
+         "currency": "GBP"
+      },
+      "city": {
+         "name": "Aberdeen",
+         "isMac": false
+      }
+   },
+   "ACE": {
+      "code": "ACE",
+      "country": {
+         "name": "Spain",
+         "code": "es",
+         "iso3Code": "ESP",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Lanzarote",
+         "isMac": false
+      }
+   },
+   "AGA": {
+      "code": "AGA",
+      "country": {
+         "name": "Morocco",
+         "code": "ma",
+         "iso3Code": "MAR",
+         "currency": "MAD"
+      },
+      "city": {
+         "name": "Agadir",
+         "isMac": false
+      }
+   },
+   "AGP": {
+      "code": "AGP",
+      "country": {
+         "name": "Spain",
+         "code": "es",
+         "iso3Code": "ESP",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Malaga",
+         "isMac": false
+      }
+   },
+   "AHO": {
+      "code": "AHO",
+      "country": {
+         "name": "Italy",
+         "code": "it",
+         "iso3Code": "ITA",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Alghero",
+         "isMac": false
+      }
+   },
+   "ALC": {
+      "code": "ALC",
+      "country": {
+         "name": "Spain",
+         "code": "es",
+         "iso3Code": "ESP",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Alicante",
+         "isMac": false
+      }
+   },
+   "JOR": {
+      "code": "JOR",
+      "country": {
+         "name": "Jordan",
+         "code": "jo",
+         "iso3Code": "JOR",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Amman",
+         "isMac": true
+      }
+   },
+   "AMS": {
+      "code": "AMS",
+      "country": {
+         "name": "Netherlands",
+         "code": "nl",
+         "iso3Code": "NLD",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Amsterdam",
+         "isMac": false
+      }
+   },
+   "AOI": {
+      "code": "AOI",
+      "country": {
+         "name": "Italy",
+         "code": "it",
+         "iso3Code": "ITA",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Ancona",
+         "isMac": false
+      }
+   },
+   "SLM": {
+      "code": "SLM",
+      "country": {
+         "name": "Sweden",
+         "code": "se",
+         "iso3Code": "SWE",
+         "currency": "SEK"
+      },
+      "city": {
+         "name": "Stockholm",
+         "isMac": true
+      }
+   },
+   "ATH": {
+      "code": "ATH",
+      "country": {
+         "name": "Greece",
+         "code": "gr",
+         "iso3Code": "GRC",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Athens",
+         "isMac": false
+      }
+   },
+   "BAR": {
+      "code": "BAR",
+      "country": {
+         "name": "Spain",
+         "code": "es",
+         "iso3Code": "ESP",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Barcelona",
+         "isMac": true
+      }
+   },
+   "BDS": {
+      "code": "BDS",
+      "country": {
+         "name": "Italy",
+         "code": "it",
+         "iso3Code": "ITA",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Brindisi",
+         "isMac": false
+      }
+   },
+   "BEM": {
+      "code": "BEM",
+      "country": {
+         "name": "Morocco",
+         "code": "ma",
+         "iso3Code": "MAR",
+         "currency": "MAD"
+      },
+      "city": {
+         "name": "Beni Mellal",
+         "isMac": false
+      }
+   },
+   "BER": {
+      "code": "BER",
+      "country": {
+         "name": "Germany",
+         "code": "de",
+         "iso3Code": "DEU",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Berlin",
+         "isMac": true
+      }
+   },
+   "BEL": {
+      "code": "BEL",
+      "country": {
+         "name": "United Kingdom",
+         "code": "gb",
+         "iso3Code": "GBR",
+         "currency": "GBP"
+      },
+      "city": {
+         "name": "Belfast",
+         "isMac": true
+      }
+   },
+   "MIL": {
+      "code": "MIL",
+      "country": {
+         "name": "Italy",
+         "code": "it",
+         "iso3Code": "ITA",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Milan",
+         "isMac": true
+      }
+   },
+   "BHX": {
+      "code": "BHX",
+      "country": {
+         "name": "United Kingdom",
+         "code": "gb",
+         "iso3Code": "GBR",
+         "currency": "GBP"
+      },
+      "city": {
+         "name": "Birmingham",
+         "isMac": false
+      }
+   },
+   "BIQ": {
+      "code": "BIQ",
+      "country": {
+         "name": "France",
+         "code": "fr",
+         "iso3Code": "FRA",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Biarritz",
+         "isMac": false
+      }
+   },
+   "BJV": {
+      "code": "BJV",
+      "country": {
+         "name": "Turkey",
+         "code": "tr",
+         "iso3Code": "TUR",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Bodrum",
+         "isMac": false
+      }
+   },
+   "BLL": {
+      "code": "BLL",
+      "country": {
+         "name": "Denmark",
+         "code": "dk",
+         "iso3Code": "DNK",
+         "currency": "DKK"
+      },
+      "city": {
+         "name": "Billund",
+         "isMac": false
+      }
+   },
+   "BLQ": {
+      "code": "BLQ",
+      "country": {
+         "name": "Italy",
+         "code": "it",
+         "iso3Code": "ITA",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Bologna",
+         "isMac": false
+      }
+   },
+   "BNX": {
+      "code": "BNX",
+      "country": {
+         "name": "Bosnia & Herzegovina",
+         "code": "ba",
+         "iso3Code": "BIH",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Banja Luka",
+         "isMac": false
+      }
+   },
+   "BOD": {
+      "code": "BOD",
+      "country": {
+         "name": "France",
+         "code": "fr",
+         "iso3Code": "FRA",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Bordeaux",
+         "isMac": false
+      }
+   },
+   "BOH": {
+      "code": "BOH",
+      "country": {
+         "name": "United Kingdom",
+         "code": "gb",
+         "iso3Code": "GBR",
+         "currency": "GBP"
+      },
+      "city": {
+         "name": "Bournemouth",
+         "isMac": false
+      }
+   },
+   "BOJ": {
+      "code": "BOJ",
+      "country": {
+         "name": "Bulgaria",
+         "code": "bg",
+         "iso3Code": "BGR",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Burgas",
+         "isMac": false
+      }
+   },
+   "BRE": {
+      "code": "BRE",
+      "country": {
+         "name": "Germany",
+         "code": "de",
+         "iso3Code": "DEU",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Bremen",
+         "isMac": false
+      }
+   },
+   "BRI": {
+      "code": "BRI",
+      "country": {
+         "name": "Italy",
+         "code": "it",
+         "iso3Code": "ITA",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Bari",
+         "isMac": false
+      }
+   },
+   "BRQ": {
+      "code": "BRQ",
+      "country": {
+         "name": "Czech Republic",
+         "code": "cz",
+         "iso3Code": "CZE",
+         "currency": "CZK"
+      },
+      "city": {
+         "name": "Brno",
+         "isMac": false
+      }
+   },
+   "BRS": {
+      "code": "BRS",
+      "country": {
+         "name": "United Kingdom",
+         "code": "gb",
+         "iso3Code": "GBR",
+         "currency": "GBP"
+      },
+      "city": {
+         "name": "Bristol",
+         "isMac": false
+      }
+   },
+   "BRL": {
+      "code": "BRL",
+      "country": {
+         "name": "Belgium",
+         "code": "be",
+         "iso3Code": "BEL",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Brussels",
+         "isMac": true
+      }
+   },
+   "BSL": {
+      "code": "BSL",
+      "country": {
+         "name": "Switzerland",
+         "code": "ch",
+         "iso3Code": "CHE",
+         "currency": "CHF"
+      },
+      "city": {
+         "name": "Basel",
+         "isMac": false
+      }
+   },
+   "BTS": {
+      "code": "BTS",
+      "country": {
+         "name": "Slovakia",
+         "code": "sk",
+         "iso3Code": "SVK",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Bratislava",
+         "isMac": false
+      }
+   },
+   "BUD": {
+      "code": "BUD",
+      "country": {
+         "name": "Hungary",
+         "code": "hu",
+         "iso3Code": "HUN",
+         "currency": "HUF"
+      },
+      "city": {
+         "name": "Budapest",
+         "isMac": false
+      }
+   },
+   "PAR": {
+      "code": "PAR",
+      "country": {
+         "name": "France",
+         "code": "fr",
+         "iso3Code": "FRA",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Paris",
+         "isMac": true
+      }
+   },
+   "BVE": {
+      "code": "BVE",
+      "country": {
+         "name": "France",
+         "code": "fr",
+         "iso3Code": "FRA",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Brive",
+         "isMac": false
+      }
+   },
+   "BZG": {
+      "code": "BZG",
+      "country": {
+         "name": "Poland",
+         "code": "pl",
+         "iso3Code": "POL",
+         "currency": "PLN"
+      },
+      "city": {
+         "name": "Bydgoszcz",
+         "isMac": false
+      }
+   },
+   "BZR": {
+      "code": "BZR",
+      "country": {
+         "name": "France",
+         "code": "fr",
+         "iso3Code": "FRA",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Beziers",
+         "isMac": false
+      }
+   },
+   "CAG": {
+      "code": "CAG",
+      "country": {
+         "name": "Italy",
+         "code": "it",
+         "iso3Code": "ITA",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Cagliari",
+         "isMac": false
+      }
+   },
+   "CCF": {
+      "code": "CCF",
+      "country": {
+         "name": "France",
+         "code": "fr",
+         "iso3Code": "FRA",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Carcassonne",
+         "isMac": false
+      }
+   },
+   "VNC": {
+      "code": "VNC",
+      "country": {
+         "name": "Spain",
+         "code": "es",
+         "iso3Code": "ESP",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Valencia",
+         "isMac": true
+      }
+   },
+   "CFE": {
+      "code": "CFE",
+      "country": {
+         "name": "France",
+         "code": "fr",
+         "iso3Code": "FRA",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Clermont Ferrand",
+         "isMac": false
+      }
+   },
+   "CFU": {
+      "code": "CFU",
+      "country": {
+         "name": "Greece",
+         "code": "gr",
+         "iso3Code": "GRC",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Corfu",
+         "isMac": false
+      }
+   },
+   "CGN": {
+      "code": "CGN",
+      "country": {
+         "name": "Germany",
+         "code": "de",
+         "iso3Code": "DEU",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Cologne",
+         "isMac": false
+      }
+   },
+   "CHQ": {
+      "code": "CHQ",
+      "country": {
+         "name": "Greece",
+         "code": "gr",
+         "iso3Code": "GRC",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Chania",
+         "isMac": false
+      }
+   },
+   "ROM": {
+      "code": "ROM",
+      "country": {
+         "name": "Italy",
+         "code": "it",
+         "iso3Code": "ITA",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Rome",
+         "isMac": true
+      }
+   },
+   "CLJ": {
+      "code": "CLJ",
+      "country": {
+         "name": "Romania",
+         "code": "ro",
+         "iso3Code": "ROU",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Cluj",
+         "isMac": false
+      }
+   },
+   "CPH": {
+      "code": "CPH",
+      "country": {
+         "name": "Denmark",
+         "code": "dk",
+         "iso3Code": "DNK",
+         "currency": "DKK"
+      },
+      "city": {
+         "name": "Copenhagen",
+         "isMac": false
+      }
+   },
+   "CRV": {
+      "code": "CRV",
+      "country": {
+         "name": "Italy",
+         "code": "it",
+         "iso3Code": "ITA",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Crotone",
+         "isMac": false
+      }
+   },
+   "CTA": {
+      "code": "CTA",
+      "country": {
+         "name": "Italy",
+         "code": "it",
+         "iso3Code": "ITA",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Catania",
+         "isMac": false
+      }
+   },
+   "CUF": {
+      "code": "CUF",
+      "country": {
+         "name": "Italy",
+         "code": "it",
+         "iso3Code": "ITA",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Cuneo",
+         "isMac": false
+      }
+   },
+   "CWL": {
+      "code": "CWL",
+      "country": {
+         "name": "United Kingdom",
+         "code": "gb",
+         "iso3Code": "GBR",
+         "currency": "GBP"
+      },
+      "city": {
+         "name": "Cardiff",
+         "isMac": false
+      }
+   },
+   "DBV": {
+      "code": "DBV",
+      "country": {
+         "name": "Croatia",
+         "code": "hr",
+         "iso3Code": "HRV",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Dubrovnik",
+         "isMac": false
+      }
+   },
+   "DLE": {
+      "code": "DLE",
+      "country": {
+         "name": "France",
+         "code": "fr",
+         "iso3Code": "FRA",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Dole",
+         "isMac": false
+      }
+   },
+   "DLM": {
+      "code": "DLM",
+      "country": {
+         "name": "Turkey",
+         "code": "tr",
+         "iso3Code": "TUR",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Dalaman",
+         "isMac": false
+      }
+   },
+   "DRS": {
+      "code": "DRS",
+      "country": {
+         "name": "Germany",
+         "code": "de",
+         "iso3Code": "DEU",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Dresden",
+         "isMac": false
+      }
+   },
+   "DTM": {
+      "code": "DTM",
+      "country": {
+         "name": "Germany",
+         "code": "de",
+         "iso3Code": "DEU",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Dortmund",
+         "isMac": false
+      }
+   },
+   "DUB": {
+      "code": "DUB",
+      "country": {
+         "name": "Ireland",
+         "code": "ie",
+         "iso3Code": "IRL",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Dublin",
+         "isMac": false
+      }
+   },
+   "EDI": {
+      "code": "EDI",
+      "country": {
+         "name": "United Kingdom",
+         "code": "gb",
+         "iso3Code": "GBR",
+         "currency": "GBP"
+      },
+      "city": {
+         "name": "Edinburgh",
+         "isMac": false
+      }
+   },
+   "EFL": {
+      "code": "EFL",
+      "country": {
+         "name": "Greece",
+         "code": "gr",
+         "iso3Code": "GRC",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Kefalonia",
+         "isMac": false
+      }
+   },
+   "EGC": {
+      "code": "EGC",
+      "country": {
+         "name": "France",
+         "code": "fr",
+         "iso3Code": "FRA",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Bergerac",
+         "isMac": false
+      }
+   },
+   "EIN": {
+      "code": "EIN",
+      "country": {
+         "name": "Netherlands",
+         "code": "nl",
+         "iso3Code": "NLD",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Eindhoven",
+         "isMac": false
+      }
+   },
+   "EMA": {
+      "code": "EMA",
+      "country": {
+         "name": "United Kingdom",
+         "code": "gb",
+         "iso3Code": "GBR",
+         "currency": "GBP"
+      },
+      "city": {
+         "name": "East Midlands",
+         "isMac": false
+      }
+   },
+   "ERH": {
+      "code": "ERH",
+      "country": {
+         "name": "Morocco",
+         "code": "ma",
+         "iso3Code": "MAR",
+         "currency": "MAD"
+      },
+      "city": {
+         "name": "Errachidia",
+         "isMac": false
+      }
+   },
+   "ESU": {
+      "code": "ESU",
+      "country": {
+         "name": "Morocco",
+         "code": "ma",
+         "iso3Code": "MAR",
+         "currency": "MAD"
+      },
+      "city": {
+         "name": "Essaouira",
+         "isMac": false
+      }
+   },
+   "EXT": {
+      "code": "EXT",
+      "country": {
+         "name": "United Kingdom",
+         "code": "gb",
+         "iso3Code": "GBR",
+         "currency": "GBP"
+      },
+      "city": {
+         "name": "Exeter",
+         "isMac": false
+      }
+   },
+   "FAO": {
+      "code": "FAO",
+      "country": {
+         "name": "Portugal",
+         "code": "pt",
+         "iso3Code": "PRT",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Faro",
+         "isMac": false
+      }
+   },
+   "FEZ": {
+      "code": "FEZ",
+      "country": {
+         "name": "Morocco",
+         "code": "ma",
+         "iso3Code": "MAR",
+         "currency": "MAD"
+      },
+      "city": {
+         "name": "Fez",
+         "isMac": false
+      }
+   },
+   "FKB": {
+      "code": "FKB",
+      "country": {
+         "name": "Germany",
+         "code": "de",
+         "iso3Code": "DEU",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Karlsruhe",
+         "isMac": false
+      }
+   },
+   "FMM": {
+      "code": "FMM",
+      "country": {
+         "name": "Germany",
+         "code": "de",
+         "iso3Code": "DEU",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Memmingen",
+         "isMac": false
+      }
+   },
+   "FMO": {
+      "code": "FMO",
+      "country": {
+         "name": "Germany",
+         "code": "de",
+         "iso3Code": "DEU",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Münster",
+         "isMac": false
+      }
+   },
+   "FNC": {
+      "code": "FNC",
+      "country": {
+         "name": "Portugal",
+         "code": "pt",
+         "iso3Code": "PRT",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Funchal",
+         "isMac": false
+      }
+   },
+   "FNI": {
+      "code": "FNI",
+      "country": {
+         "name": "France",
+         "code": "fr",
+         "iso3Code": "FRA",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Nimes",
+         "isMac": false
+      }
+   },
+   "FRL": {
+      "code": "FRL",
+      "country": {
+         "name": "Italy",
+         "code": "it",
+         "iso3Code": "ITA",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Bologna",
+         "isMac": false
+      }
+   },
+   "FSC": {
+      "code": "FSC",
+      "country": {
+         "name": "France",
+         "code": "fr",
+         "iso3Code": "FRA",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Figari",
+         "isMac": false
+      }
+   },
+   "FUE": {
+      "code": "FUE",
+      "country": {
+         "name": "Spain",
+         "code": "es",
+         "iso3Code": "ESP",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Fuerteventura",
+         "isMac": false
+      }
+   },
+   "GDN": {
+      "code": "GDN",
+      "country": {
+         "name": "Poland",
+         "code": "pl",
+         "iso3Code": "POL",
+         "currency": "PLN"
+      },
+      "city": {
+         "name": "Gdansk",
+         "isMac": false
+      }
+   },
+   "GLW": {
+      "code": "GLW",
+      "country": {
+         "name": "United Kingdom",
+         "code": "gb",
+         "iso3Code": "GBR",
+         "currency": "GBP"
+      },
+      "city": {
+         "name": "Glasgow",
+         "isMac": true
+      }
+   },
+   "GNB": {
+      "code": "GNB",
+      "country": {
+         "name": "France",
+         "code": "fr",
+         "iso3Code": "FRA",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Grenoble",
+         "isMac": false
+      }
+   },
+   "GOA": {
+      "code": "GOA",
+      "country": {
+         "name": "Italy",
+         "code": "it",
+         "iso3Code": "ITA",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Genoa",
+         "isMac": false
+      }
+   },
+   "GOT": {
+      "code": "GOT",
+      "country": {
+         "name": "Sweden",
+         "code": "se",
+         "iso3Code": "SWE",
+         "currency": "SEK"
+      },
+      "city": {
+         "name": "Gothenburg",
+         "isMac": false
+      }
+   },
+   "HAM": {
+      "code": "HAM",
+      "country": {
+         "name": "Germany",
+         "code": "de",
+         "iso3Code": "DEU",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Hamburg",
+         "isMac": false
+      }
+   },
+   "HEL": {
+      "code": "HEL",
+      "country": {
+         "name": "Finland",
+         "code": "fi",
+         "iso3Code": "FIN",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Helsinki",
+         "isMac": false
+      }
+   },
+   "HER": {
+      "code": "HER",
+      "country": {
+         "name": "Greece",
+         "code": "gr",
+         "iso3Code": "GRC",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Heraklion",
+         "isMac": false
+      }
+   },
+   "FRT": {
+      "code": "FRT",
+      "country": {
+         "name": "Germany",
+         "code": "de",
+         "iso3Code": "DEU",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Frankfurt",
+         "isMac": true
+      }
+   },
+   "IAS": {
+      "code": "IAS",
+      "country": {
+         "name": "Romania",
+         "code": "ro",
+         "iso3Code": "ROU",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "IASI",
+         "isMac": false
+      }
+   },
+   "IBZ": {
+      "code": "IBZ",
+      "country": {
+         "name": "Spain",
+         "code": "es",
+         "iso3Code": "ESP",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Ibiza",
+         "isMac": false
+      }
+   },
+   "INI": {
+      "code": "INI",
+      "country": {
+         "name": "Serbia",
+         "code": "rs",
+         "iso3Code": "SRB",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Nis",
+         "isMac": false
+      }
+   },
+   "JMK": {
+      "code": "JMK",
+      "country": {
+         "name": "Greece",
+         "code": "gr",
+         "iso3Code": "GRC",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Mykonos",
+         "isMac": false
+      }
+   },
+   "JSI": {
+      "code": "JSI",
+      "country": {
+         "name": "Greece",
+         "code": "gr",
+         "iso3Code": "GRC",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Skiathos",
+         "isMac": false
+      }
+   },
+   "JTR": {
+      "code": "JTR",
+      "country": {
+         "name": "Greece",
+         "code": "gr",
+         "iso3Code": "GRC",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Santorini",
+         "isMac": false
+      }
+   },
+   "KGS": {
+      "code": "KGS",
+      "country": {
+         "name": "Greece",
+         "code": "gr",
+         "iso3Code": "GRC",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Kos",
+         "isMac": false
+      }
+   },
+   "KIR": {
+      "code": "KIR",
+      "country": {
+         "name": "Ireland",
+         "code": "ie",
+         "iso3Code": "IRL",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Kerry",
+         "isMac": false
+      }
+   },
+   "KLU": {
+      "code": "KLU",
+      "country": {
+         "name": "Austria",
+         "code": "at",
+         "iso3Code": "AUT",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Klagenfurt",
+         "isMac": false
+      }
+   },
+   "KLX": {
+      "code": "KLX",
+      "country": {
+         "name": "Greece",
+         "code": "gr",
+         "iso3Code": "GRC",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Kalamata",
+         "isMac": false
+      }
+   },
+   "KRK": {
+      "code": "KRK",
+      "country": {
+         "name": "Poland",
+         "code": "pl",
+         "iso3Code": "POL",
+         "currency": "PLN"
+      },
+      "city": {
+         "name": "Krakow",
+         "isMac": false
+      }
+   },
+   "KSC": {
+      "code": "KSC",
+      "country": {
+         "name": "Slovakia",
+         "code": "sk",
+         "iso3Code": "SVK",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Kosice",
+         "isMac": false
+      }
+   },
+   "KTW": {
+      "code": "KTW",
+      "country": {
+         "name": "Poland",
+         "code": "pl",
+         "iso3Code": "POL",
+         "currency": "PLN"
+      },
+      "city": {
+         "name": "Katowice",
+         "isMac": false
+      }
+   },
+   "KUN": {
+      "code": "KUN",
+      "country": {
+         "name": "Lithuania",
+         "code": "lt",
+         "iso3Code": "LTU",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Kaunas",
+         "isMac": false
+      }
+   },
+   "LBA": {
+      "code": "LBA",
+      "country": {
+         "name": "United Kingdom",
+         "code": "gb",
+         "iso3Code": "GBR",
+         "currency": "GBP"
+      },
+      "city": {
+         "name": "Leeds",
+         "isMac": false
+      }
+   },
+   "LCA": {
+      "code": "LCA",
+      "country": {
+         "name": "Cyprus",
+         "code": "cy",
+         "iso3Code": "CYP",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Larnaca",
+         "isMac": false
+      }
+   },
+   "LCJ": {
+      "code": "LCJ",
+      "country": {
+         "name": "Poland",
+         "code": "pl",
+         "iso3Code": "POL",
+         "currency": "PLN"
+      },
+      "city": {
+         "name": "Lodz",
+         "isMac": false
+      }
+   },
+   "LDE": {
+      "code": "LDE",
+      "country": {
+         "name": "France",
+         "code": "fr",
+         "iso3Code": "FRA",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Lourdes",
+         "isMac": false
+      }
+   },
+   "LDY": {
+      "code": "LDY",
+      "country": {
+         "name": "United Kingdom",
+         "code": "gb",
+         "iso3Code": "GBR",
+         "currency": "GBP"
+      },
+      "city": {
+         "name": "Derry",
+         "isMac": false
+      }
+   },
+   "LEI": {
+      "code": "LEI",
+      "country": {
+         "name": "Spain",
+         "code": "es",
+         "iso3Code": "ESP",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Almeria",
+         "isMac": false
+      }
+   },
+   "LEJ": {
+      "code": "LEJ",
+      "country": {
+         "name": "Germany",
+         "code": "de",
+         "iso3Code": "DEU",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Leipzig",
+         "isMac": false
+      }
+   },
+   "LON": {
+      "code": "LON",
+      "country": {
+         "name": "United Kingdom",
+         "code": "gb",
+         "iso3Code": "GBR",
+         "currency": "GBP"
+      },
+      "city": {
+         "name": "London",
+         "isMac": true
+      }
+   },
+   "LIG": {
+      "code": "LIG",
+      "country": {
+         "name": "France",
+         "code": "fr",
+         "iso3Code": "FRA",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Limoges",
+         "isMac": false
+      }
+   },
+   "LIL": {
+      "code": "LIL",
+      "country": {
+         "name": "France",
+         "code": "fr",
+         "iso3Code": "FRA",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Lille",
+         "isMac": false
+      }
+   },
+   "LIS": {
+      "code": "LIS",
+      "country": {
+         "name": "Portugal",
+         "code": "pt",
+         "iso3Code": "PRT",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Lisbon",
+         "isMac": false
+      }
+   },
+   "LPA": {
+      "code": "LPA",
+      "country": {
+         "name": "Spain",
+         "code": "es",
+         "iso3Code": "ESP",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Gran Canaria",
+         "isMac": false
+      }
+   },
+   "LPL": {
+      "code": "LPL",
+      "country": {
+         "name": "United Kingdom",
+         "code": "gb",
+         "iso3Code": "GBR",
+         "currency": "GBP"
+      },
+      "city": {
+         "name": "Liverpool",
+         "isMac": false
+      }
+   },
+   "LPP": {
+      "code": "LPP",
+      "country": {
+         "name": "Finland",
+         "code": "fi",
+         "iso3Code": "FIN",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Lappeenranta",
+         "isMac": false
+      }
+   },
+   "LRH": {
+      "code": "LRH",
+      "country": {
+         "name": "France",
+         "code": "fr",
+         "iso3Code": "FRA",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "La Rochelle",
+         "isMac": false
+      }
+   },
+   "LUX": {
+      "code": "LUX",
+      "country": {
+         "name": "Luxembourg",
+         "code": "lu",
+         "iso3Code": "LUX",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Luxembourg",
+         "isMac": false
+      }
+   },
+   "LUZ": {
+      "code": "LUZ",
+      "country": {
+         "name": "Poland",
+         "code": "pl",
+         "iso3Code": "POL",
+         "currency": "PLN"
+      },
+      "city": {
+         "name": "Lublin",
+         "isMac": false
+      }
+   },
+   "MAD": {
+      "code": "MAD",
+      "country": {
+         "name": "Spain",
+         "code": "es",
+         "iso3Code": "ESP",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Madrid",
+         "isMac": false
+      }
+   },
+   "MAH": {
+      "code": "MAH",
+      "country": {
+         "name": "Spain",
+         "code": "es",
+         "iso3Code": "ESP",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Menorca",
+         "isMac": false
+      }
+   },
+   "MAN": {
+      "code": "MAN",
+      "country": {
+         "name": "United Kingdom",
+         "code": "gb",
+         "iso3Code": "GBR",
+         "currency": "GBP"
+      },
+      "city": {
+         "name": "Manchester",
+         "isMac": false
+      }
+   },
+   "MLA": {
+      "code": "MLA",
+      "country": {
+         "name": "Malta",
+         "code": "mt",
+         "iso3Code": "MLT",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Malta",
+         "isMac": false
+      }
+   },
+   "MME": {
+      "code": "MME",
+      "country": {
+         "name": "United Kingdom",
+         "code": "gb",
+         "iso3Code": "GBR",
+         "currency": "GBP"
+      },
+      "city": {
+         "name": "Newcastle",
+         "isMac": false
+      }
+   },
+   "MMX": {
+      "code": "MMX",
+      "country": {
+         "name": "Sweden",
+         "code": "se",
+         "iso3Code": "SWE",
+         "currency": "SEK"
+      },
+      "city": {
+         "name": "Malmo",
+         "isMac": false
+      }
+   },
+   "MRS": {
+      "code": "MRS",
+      "country": {
+         "name": "France",
+         "code": "fr",
+         "iso3Code": "FRA",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Marseille",
+         "isMac": false
+      }
+   },
+   "MST": {
+      "code": "MST",
+      "country": {
+         "name": "Netherlands",
+         "code": "nl",
+         "iso3Code": "NLD",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Maastricht",
+         "isMac": false
+      }
+   },
+   "NAP": {
+      "code": "NAP",
+      "country": {
+         "name": "Italy",
+         "code": "it",
+         "iso3Code": "ITA",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Naples",
+         "isMac": false
+      }
+   },
+   "NCE": {
+      "code": "NCE",
+      "country": {
+         "name": "France",
+         "code": "fr",
+         "iso3Code": "FRA",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Nice",
+         "isMac": false
+      }
+   },
+   "NCL": {
+      "code": "NCL",
+      "country": {
+         "name": "United Kingdom",
+         "code": "gb",
+         "iso3Code": "GBR",
+         "currency": "GBP"
+      },
+      "city": {
+         "name": "Newcastle",
+         "isMac": false
+      }
+   },
+   "NDR": {
+      "code": "NDR",
+      "country": {
+         "name": "Morocco",
+         "code": "ma",
+         "iso3Code": "MAR",
+         "currency": "MAD"
+      },
+      "city": {
+         "name": "Nador",
+         "isMac": false
+      }
+   },
+   "NOC": {
+      "code": "NOC",
+      "country": {
+         "name": "Ireland",
+         "code": "ie",
+         "iso3Code": "IRL",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Knock",
+         "isMac": false
+      }
+   },
+   "NQY": {
+      "code": "NQY",
+      "country": {
+         "name": "United Kingdom",
+         "code": "gb",
+         "iso3Code": "GBR",
+         "currency": "GBP"
+      },
+      "city": {
+         "name": "Newquay",
+         "isMac": false
+      }
+   },
+   "DOF": {
+      "code": "DOF",
+      "country": {
+         "name": "Germany",
+         "code": "de",
+         "iso3Code": "DEU",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Dusseldorf",
+         "isMac": true
+      }
+   },
+   "NTE": {
+      "code": "NTE",
+      "country": {
+         "name": "France",
+         "code": "fr",
+         "iso3Code": "FRA",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Nantes",
+         "isMac": false
+      }
+   },
+   "NUE": {
+      "code": "NUE",
+      "country": {
+         "name": "Germany",
+         "code": "de",
+         "iso3Code": "DEU",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Nuremberg",
+         "isMac": false
+      }
+   },
+   "NWI": {
+      "code": "NWI",
+      "country": {
+         "name": "United Kingdom",
+         "code": "gb",
+         "iso3Code": "GBR",
+         "currency": "GBP"
+      },
+      "city": {
+         "name": "Norwich",
+         "isMac": false
+      }
+   },
+   "OLB": {
+      "code": "OLB",
+      "country": {
+         "name": "Italy",
+         "code": "it",
+         "iso3Code": "ITA",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Olbia",
+         "isMac": false
+      }
+   },
+   "OPO": {
+      "code": "OPO",
+      "country": {
+         "name": "Portugal",
+         "code": "pt",
+         "iso3Code": "PRT",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Porto",
+         "isMac": false
+      }
+   },
+   "ORB": {
+      "code": "ORB",
+      "country": {
+         "name": "Sweden",
+         "code": "se",
+         "iso3Code": "SWE",
+         "currency": "SEK"
+      },
+      "city": {
+         "name": "Örebro",
+         "isMac": false
+      }
+   },
+   "ORK": {
+      "code": "ORK",
+      "country": {
+         "name": "Ireland",
+         "code": "ie",
+         "iso3Code": "IRL",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Cork",
+         "isMac": false
+      }
+   },
+   "OSI": {
+      "code": "OSI",
+      "country": {
+         "name": "Croatia",
+         "code": "hr",
+         "iso3Code": "HRV",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Osijek",
+         "isMac": false
+      }
+   },
+   "OSO": {
+      "code": "OSO",
+      "country": {
+         "name": "Norway",
+         "code": "no",
+         "iso3Code": "NOR",
+         "currency": "NOK"
+      },
+      "city": {
+         "name": "Oslo",
+         "isMac": true
+      }
+   },
+   "OSR": {
+      "code": "OSR",
+      "country": {
+         "name": "Czech Republic",
+         "code": "cz",
+         "iso3Code": "CZE",
+         "currency": "CZK"
+      },
+      "city": {
+         "name": "Ostrava",
+         "isMac": false
+      }
+   },
+   "OTP": {
+      "code": "OTP",
+      "country": {
+         "name": "Romania",
+         "code": "ro",
+         "iso3Code": "ROU",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Bucharest",
+         "isMac": false
+      }
+   },
+   "OUD": {
+      "code": "OUD",
+      "country": {
+         "name": "Morocco",
+         "code": "ma",
+         "iso3Code": "MAR",
+         "currency": "MAD"
+      },
+      "city": {
+         "name": "Oujda",
+         "isMac": false
+      }
+   },
+   "OVD": {
+      "code": "OVD",
+      "country": {
+         "name": "Spain",
+         "code": "es",
+         "iso3Code": "ESP",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Oviedo",
+         "isMac": false
+      }
+   },
+   "OZZ": {
+      "code": "OZZ",
+      "country": {
+         "name": "Morocco",
+         "code": "ma",
+         "iso3Code": "MAR",
+         "currency": "MAD"
+      },
+      "city": {
+         "name": "Ouarzazate",
+         "isMac": false
+      }
+   },
+   "PAD": {
+      "code": "PAD",
+      "country": {
+         "name": "Germany",
+         "code": "de",
+         "iso3Code": "DEU",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Paderborn",
+         "isMac": false
+      }
+   },
+   "PDL": {
+      "code": "PDL",
+      "country": {
+         "name": "Portugal",
+         "code": "pt",
+         "iso3Code": "PRT",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Ponta Delgada",
+         "isMac": false
+      }
+   },
+   "PDV": {
+      "code": "PDV",
+      "country": {
+         "name": "Bulgaria",
+         "code": "bg",
+         "iso3Code": "BGR",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Plovdiv",
+         "isMac": false
+      }
+   },
+   "PED": {
+      "code": "PED",
+      "country": {
+         "name": "Czech Republic",
+         "code": "cz",
+         "iso3Code": "CZE",
+         "currency": "CZK"
+      },
+      "city": {
+         "name": "Pardubice",
+         "isMac": false
+      }
+   },
+   "PEG": {
+      "code": "PEG",
+      "country": {
+         "name": "Italy",
+         "code": "it",
+         "iso3Code": "ITA",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Perugia",
+         "isMac": false
+      }
+   },
+   "PFO": {
+      "code": "PFO",
+      "country": {
+         "name": "Cyprus",
+         "code": "cy",
+         "iso3Code": "CYP",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Paphos",
+         "isMac": false
+      }
+   },
+   "PGF": {
+      "code": "PGF",
+      "country": {
+         "name": "France",
+         "code": "fr",
+         "iso3Code": "FRA",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Perpignan",
+         "isMac": false
+      }
+   },
+   "PIS": {
+      "code": "PIS",
+      "country": {
+         "name": "France",
+         "code": "fr",
+         "iso3Code": "FRA",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Poitiers",
+         "isMac": false
+      }
+   },
+   "PLQ": {
+      "code": "PLQ",
+      "country": {
+         "name": "Lithuania",
+         "code": "lt",
+         "iso3Code": "LTU",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Palanga",
+         "isMac": false
+      }
+   },
+   "PMF": {
+      "code": "PMF",
+      "country": {
+         "name": "Italy",
+         "code": "it",
+         "iso3Code": "ITA",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Parma",
+         "isMac": false
+      }
+   },
+   "PMI": {
+      "code": "PMI",
+      "country": {
+         "name": "Spain",
+         "code": "es",
+         "iso3Code": "ESP",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Palma",
+         "isMac": false
+      }
+   },
+   "PMO": {
+      "code": "PMO",
+      "country": {
+         "name": "Italy",
+         "code": "it",
+         "iso3Code": "ITA",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Palermo",
+         "isMac": false
+      }
+   },
+   "POZ": {
+      "code": "POZ",
+      "country": {
+         "name": "Poland",
+         "code": "pl",
+         "iso3Code": "POL",
+         "currency": "PLN"
+      },
+      "city": {
+         "name": "Poznan",
+         "isMac": false
+      }
+   },
+   "PRG": {
+      "code": "PRG",
+      "country": {
+         "name": "Czech Republic",
+         "code": "cz",
+         "iso3Code": "CZE",
+         "currency": "CZK"
+      },
+      "city": {
+         "name": "Prague",
+         "isMac": false
+      }
+   },
+   "PSA": {
+      "code": "PSA",
+      "country": {
+         "name": "Italy",
+         "code": "it",
+         "iso3Code": "ITA",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Pisa",
+         "isMac": false
+      }
+   },
+   "PSR": {
+      "code": "PSR",
+      "country": {
+         "name": "Italy",
+         "code": "it",
+         "iso3Code": "ITA",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Pescara",
+         "isMac": false
+      }
+   },
+   "PUY": {
+      "code": "PUY",
+      "country": {
+         "name": "Croatia",
+         "code": "hr",
+         "iso3Code": "HRV",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Pula",
+         "isMac": false
+      }
+   },
+   "PVK": {
+      "code": "PVK",
+      "country": {
+         "name": "Greece",
+         "code": "gr",
+         "iso3Code": "GRC",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Preveza",
+         "isMac": false
+      }
+   },
+   "RAK": {
+      "code": "RAK",
+      "country": {
+         "name": "Morocco",
+         "code": "ma",
+         "iso3Code": "MAR",
+         "currency": "MAD"
+      },
+      "city": {
+         "name": "Marrakesh",
+         "isMac": false
+      }
+   },
+   "RBA": {
+      "code": "RBA",
+      "country": {
+         "name": "Morocco",
+         "code": "ma",
+         "iso3Code": "MAR",
+         "currency": "MAD"
+      },
+      "city": {
+         "name": "Rabat",
+         "isMac": false
+      }
+   },
+   "RDZ": {
+      "code": "RDZ",
+      "country": {
+         "name": "France",
+         "code": "fr",
+         "iso3Code": "FRA",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Rodez",
+         "isMac": false
+      }
+   },
+   "REG": {
+      "code": "REG",
+      "country": {
+         "name": "Italy",
+         "code": "it",
+         "iso3Code": "ITA",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Reggio Calabria",
+         "isMac": false
+      }
+   },
+   "RHO": {
+      "code": "RHO",
+      "country": {
+         "name": "Greece",
+         "code": "gr",
+         "iso3Code": "GRC",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Rhodes",
+         "isMac": false
+      }
+   },
+   "RIX": {
+      "code": "RIX",
+      "country": {
+         "name": "Latvia",
+         "code": "lv",
+         "iso3Code": "LVA",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Riga",
+         "isMac": false
+      }
+   },
+   "RJK": {
+      "code": "RJK",
+      "country": {
+         "name": "Croatia",
+         "code": "hr",
+         "iso3Code": "HRV",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Rijeka",
+         "isMac": false
+      }
+   },
+   "RMI": {
+      "code": "RMI",
+      "country": {
+         "name": "Italy",
+         "code": "it",
+         "iso3Code": "ITA",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Rimini",
+         "isMac": false
+      }
+   },
+   "RMU": {
+      "code": "RMU",
+      "country": {
+         "name": "Spain",
+         "code": "es",
+         "iso3Code": "ESP",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Murcia",
+         "isMac": false
+      }
+   },
+   "RVN": {
+      "code": "RVN",
+      "country": {
+         "name": "Finland",
+         "code": "fi",
+         "iso3Code": "FIN",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Rovaniemi",
+         "isMac": false
+      }
+   },
+   "RZE": {
+      "code": "RZE",
+      "country": {
+         "name": "Poland",
+         "code": "pl",
+         "iso3Code": "POL",
+         "currency": "PLN"
+      },
+      "city": {
+         "name": "Rzeszow",
+         "isMac": false
+      }
+   },
+   "SCQ": {
+      "code": "SCQ",
+      "country": {
+         "name": "Spain",
+         "code": "es",
+         "iso3Code": "ESP",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Santiago",
+         "isMac": false
+      }
+   },
+   "SDR": {
+      "code": "SDR",
+      "country": {
+         "name": "Spain",
+         "code": "es",
+         "iso3Code": "ESP",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Santander",
+         "isMac": false
+      }
+   },
+   "SFT": {
+      "code": "SFT",
+      "country": {
+         "name": "Sweden",
+         "code": "se",
+         "iso3Code": "SWE",
+         "currency": "SEK"
+      },
+      "city": {
+         "name": "Skelleftea",
+         "isMac": false
+      }
+   },
+   "SJJ": {
+      "code": "SJJ",
+      "country": {
+         "name": "Bosnia & Herzegovina",
+         "code": "ba",
+         "iso3Code": "BIH",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Sarajevo",
+         "isMac": false
+      }
+   },
+   "SKG": {
+      "code": "SKG",
+      "country": {
+         "name": "Greece",
+         "code": "gr",
+         "iso3Code": "GRC",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Thessaloniki",
+         "isMac": false
+      }
+   },
+   "SNN": {
+      "code": "SNN",
+      "country": {
+         "name": "Ireland",
+         "code": "ie",
+         "iso3Code": "IRL",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Shannon",
+         "isMac": false
+      }
+   },
+   "SOF": {
+      "code": "SOF",
+      "country": {
+         "name": "Bulgaria",
+         "code": "bg",
+         "iso3Code": "BGR",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Sofia",
+         "isMac": false
+      }
+   },
+   "SPU": {
+      "code": "SPU",
+      "country": {
+         "name": "Croatia",
+         "code": "hr",
+         "iso3Code": "HRV",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Split",
+         "isMac": false
+      }
+   },
+   "SUF": {
+      "code": "SUF",
+      "country": {
+         "name": "Italy",
+         "code": "it",
+         "iso3Code": "ITA",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Lamezia",
+         "isMac": false
+      }
+   },
+   "SVQ": {
+      "code": "SVQ",
+      "country": {
+         "name": "Spain",
+         "code": "es",
+         "iso3Code": "ESP",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Seville",
+         "isMac": false
+      }
+   },
+   "SXB": {
+      "code": "SXB",
+      "country": {
+         "name": "France",
+         "code": "fr",
+         "iso3Code": "FRA",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Strasbourg",
+         "isMac": false
+      }
+   },
+   "SZG": {
+      "code": "SZG",
+      "country": {
+         "name": "Austria",
+         "code": "at",
+         "iso3Code": "AUT",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Salzburg",
+         "isMac": false
+      }
+   },
+   "SZY": {
+      "code": "SZY",
+      "country": {
+         "name": "Poland",
+         "code": "pl",
+         "iso3Code": "POL",
+         "currency": "PLN"
+      },
+      "city": {
+         "name": "Olsztyn",
+         "isMac": false
+      }
+   },
+   "SZZ": {
+      "code": "SZZ",
+      "country": {
+         "name": "Poland",
+         "code": "pl",
+         "iso3Code": "POL",
+         "currency": "PLN"
+      },
+      "city": {
+         "name": "Szczecin",
+         "isMac": false
+      }
+   },
+   "TAT": {
+      "code": "TAT",
+      "country": {
+         "name": "Slovakia",
+         "code": "sk",
+         "iso3Code": "SVK",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Poprad - Tatry (Tatra Mountains)",
+         "isMac": false
+      }
+   },
+   "TER": {
+      "code": "TER",
+      "country": {
+         "name": "Portugal",
+         "code": "pt",
+         "iso3Code": "PRT",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Terceira",
+         "isMac": false
+      }
+   },
+   "TEN": {
+      "code": "TEN",
+      "country": {
+         "name": "Spain",
+         "code": "es",
+         "iso3Code": "ESP",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Tenerife",
+         "isMac": true
+      }
+   },
+   "TGD": {
+      "code": "TGD",
+      "country": {
+         "name": "Montenegro",
+         "code": "me",
+         "iso3Code": "MNE",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Podgorica",
+         "isMac": false
+      }
+   },
+   "TIA": {
+      "code": "TIA",
+      "country": {
+         "name": "Albania",
+         "code": "al",
+         "iso3Code": "ALB",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Tirana",
+         "isMac": false
+      }
+   },
+   "TLL": {
+      "code": "TLL",
+      "country": {
+         "name": "Estonia",
+         "code": "ee",
+         "iso3Code": "EST",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Tallinn",
+         "isMac": false
+      }
+   },
+   "TLS": {
+      "code": "TLS",
+      "country": {
+         "name": "France",
+         "code": "fr",
+         "iso3Code": "FRA",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Toulouse",
+         "isMac": false
+      }
+   },
+   "TLV": {
+      "code": "TLV",
+      "country": {
+         "name": "Israel",
+         "code": "il",
+         "iso3Code": "ISR",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Tel Aviv",
+         "isMac": false
+      }
+   },
+   "TNG": {
+      "code": "TNG",
+      "country": {
+         "name": "Morocco",
+         "code": "ma",
+         "iso3Code": "MAR",
+         "currency": "MAD"
+      },
+      "city": {
+         "name": "Tangier",
+         "isMac": false
+      }
+   },
+   "TPS": {
+      "code": "TPS",
+      "country": {
+         "name": "Italy",
+         "code": "it",
+         "iso3Code": "ITA",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Trapani",
+         "isMac": false
+      }
+   },
+   "TRN": {
+      "code": "TRN",
+      "country": {
+         "name": "Italy",
+         "code": "it",
+         "iso3Code": "ITA",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Turin",
+         "isMac": false
+      }
+   },
+   "TRS": {
+      "code": "TRS",
+      "country": {
+         "name": "Italy",
+         "code": "it",
+         "iso3Code": "ITA",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Trieste",
+         "isMac": false
+      }
+   },
+   "VEN": {
+      "code": "VEN",
+      "country": {
+         "name": "Italy",
+         "code": "it",
+         "iso3Code": "ITA",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Venice",
+         "isMac": true
+      }
+   },
+   "TTU": {
+      "code": "TTU",
+      "country": {
+         "name": "Morocco",
+         "code": "ma",
+         "iso3Code": "MAR",
+         "currency": "MAD"
+      },
+      "city": {
+         "name": "Tétouan",
+         "isMac": false
+      }
+   },
+   "TUF": {
+      "code": "TUF",
+      "country": {
+         "name": "France",
+         "code": "fr",
+         "iso3Code": "FRA",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Tours",
+         "isMac": false
+      }
+   },
+   "VAR": {
+      "code": "VAR",
+      "country": {
+         "name": "Bulgaria",
+         "code": "bg",
+         "iso3Code": "BGR",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Varna",
+         "isMac": false
+      }
+   },
+   "VGO": {
+      "code": "VGO",
+      "country": {
+         "name": "Spain",
+         "code": "es",
+         "iso3Code": "ESP",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Vigo",
+         "isMac": false
+      }
+   },
+   "VIE": {
+      "code": "VIE",
+      "country": {
+         "name": "Austria",
+         "code": "at",
+         "iso3Code": "AUT",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Vienna",
+         "isMac": false
+      }
+   },
+   "VIT": {
+      "code": "VIT",
+      "country": {
+         "name": "Spain",
+         "code": "es",
+         "iso3Code": "ESP",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Vitoria-Gasteiz",
+         "isMac": false
+      }
+   },
+   "VLL": {
+      "code": "VLL",
+      "country": {
+         "name": "Spain",
+         "code": "es",
+         "iso3Code": "ESP",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Valladolid",
+         "isMac": false
+      }
+   },
+   "VNO": {
+      "code": "VNO",
+      "country": {
+         "name": "Lithuania",
+         "code": "lt",
+         "iso3Code": "LTU",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Vilnius",
+         "isMac": false
+      }
+   },
+   "VRN": {
+      "code": "VRN",
+      "country": {
+         "name": "Italy",
+         "code": "it",
+         "iso3Code": "ITA",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Verona",
+         "isMac": false
+      }
+   },
+   "VXO": {
+      "code": "VXO",
+      "country": {
+         "name": "Sweden",
+         "code": "se",
+         "iso3Code": "SWE",
+         "currency": "SEK"
+      },
+      "city": {
+         "name": "Växjö",
+         "isMac": false
+      }
+   },
+   "WWA": {
+      "code": "WWA",
+      "country": {
+         "name": "Poland",
+         "code": "pl",
+         "iso3Code": "POL",
+         "currency": "PLN"
+      },
+      "city": {
+         "name": "Warsaw",
+         "isMac": true
+      }
+   },
+   "WRO": {
+      "code": "WRO",
+      "country": {
+         "name": "Poland",
+         "code": "pl",
+         "iso3Code": "POL",
+         "currency": "PLN"
+      },
+      "city": {
+         "name": "Wroclaw",
+         "isMac": false
+      }
+   },
+   "XRY": {
+      "code": "XRY",
+      "country": {
+         "name": "Spain",
+         "code": "es",
+         "iso3Code": "ESP",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Jerez",
+         "isMac": false
+      }
+   },
+   "ZAD": {
+      "code": "ZAD",
+      "country": {
+         "name": "Croatia",
+         "code": "hr",
+         "iso3Code": "HRV",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Zadar",
+         "isMac": false
+      }
+   },
+   "ZAG": {
+      "code": "ZAG",
+      "country": {
+         "name": "Croatia",
+         "code": "hr",
+         "iso3Code": "HRV",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Zagreb",
+         "isMac": false
+      }
+   },
+   "ZAZ": {
+      "code": "ZAZ",
+      "country": {
+         "name": "Spain",
+         "code": "es",
+         "iso3Code": "ESP",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Zaragoza",
+         "isMac": false
+      }
+   },
+   "ZTH": {
+      "code": "ZTH",
+      "country": {
+         "name": "Greece",
+         "code": "gr",
+         "iso3Code": "GRC",
+         "currency": "EUR"
+      },
+      "city": {
+         "name": "Zakynthos",
+         "isMac": false
+      }
+   }
+}
