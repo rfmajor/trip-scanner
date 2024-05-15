@@ -39,7 +39,6 @@ function getAllMonthsFromRange(startDate, endDate, parse) {
     const dates = []
 
     while (date <= end) {
-        console.log(date)
         dates.push(parse(new Date(date)))
         date.setMonth(date.getMonth() + 1)
     }
@@ -69,21 +68,21 @@ function createAvailabilityRequests(origins, destinations, startDate, plusDays) 
     return requests
 }
 
-function createOneWayCheapestFaresRequests(origins, destinations, startDate, currency) {
+function createOneWayCheapestFaresRequests(origins, destinations, startDate, endDate, currency) {
     const requests = []
 
     const dates = getAllMonthsFromRange(startDate, endDate, parseStartOfMonth)
     for (const [origin, destination, date] of cartesian(origins, destinations, dates)) {
         const generatePayload = (origin, destination) => {
-            const isOriginCityMac = origin['city']['isMac']
             const originCode = origin['code']
-
-            const isDestinationCityMac = destination['city']['isMac']
             const destinationCode = destination['code']
 
-            return config.availabilityRequestPayload(originCode, destinationCode, isOriginCityMac, isDestinationCityMac, date)
+            return config.oneWayCheapestFaresRequestPayload(originCode, destinationCode, date, currency)
         }
+        requests.push(generatePayload(origin, destination))
+        requests.push(generatePayload(destination, origin))
     }
+    return requests
 }
 
 function parseStartOfMonth(date) {
@@ -95,4 +94,4 @@ function cartesian(...a) {
     return a.reduce((a, b) => a.flatMap(d => b.map(e => [d, e].flat())));
 }
 
-module.exports = { getLowestPrice, createAvailabilityRequests }
+module.exports = { getLowestPrice, createAvailabilityRequests, createOneWayCheapestFaresRequests }

@@ -52,7 +52,7 @@ config.oneWayCheapestFaresRequestPayload = (origin, destination, dateOut, curren
 })
 
 config.availabilityUrl = "/api/booking/v4/pl-pl/availability"
-config.oneWayCheapestFaresUrl = (origin, destination) => `/api/farfnd/v4/oneWayFares/${origin}/${destination}`
+config.oneWayCheapestFaresUrl = (origin, destination) => `/api/farfnd/v4/oneWayFares/${origin}/${destination}/cheapestPerDay`
 config.cookieUrl = '/pl/pl/trip/flights/select'
 config.maxRequestsPerProxy = 35
 

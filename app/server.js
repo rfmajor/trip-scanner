@@ -1,8 +1,8 @@
-import { getAvailabilityData } from './crawler.cjs';
+import { getAvailabilityData, getOneWayCheapestFaresData } from './scraper.cjs';
 import fs from 'fs'
 import logger from './log.cjs';
 import { createProxies, deleteProxies } from './gateways.cjs'
-import { createAvailabilityRequests, getLowestPrice } from './requestMapper.cjs';
+import { createAvailabilityRequests, createOneWayCheapestFaresRequests, getLowestPrice } from './requestMapper.cjs';
 
 
 if (true) {
@@ -10,13 +10,14 @@ if (true) {
         const codesToAirports = JSON.parse(fs.readFileSync('./cities_small.json', 'utf8'))
 
         const krk = codesToAirports['KRK']
-        const destinations = [codesToAirports['MIL'], codesToAirports['BAR'], codesToAirports['BER'], codesToAirports['PAR'], codesToAirports['ROM']]
+        const destinations = [codesToAirports['BER'], codesToAirports['VIE']]
     
         await createProxies()
     
-        const requests = createAvailabilityRequests([krk], destinations, "2024-05-20", 28)
+        const requests = createOneWayCheapestFaresRequests([krk], destinations, "2024-06-20", "2024-12-01", "PLN")
     
-        await getAvailabilityData(requests).then(element => {
+        const responses = await getOneWayCheapestFaresData(requests)
+        responses.forEach(element => {
             console.log(JSON.stringify(element, null, 2))
         })
 

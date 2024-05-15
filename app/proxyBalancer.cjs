@@ -14,21 +14,6 @@ async function fetchUsingProxies(requests, supplyUrl, supplyRequestCommonData, r
 
     const requestBatches = distributeRequests(requests, regions.length)
 
-    /* return Array.from(Promise.all(
-        requestBatches.map(async (batch, index) => {
-            const proxy = proxies[regions[index]]
-            const proxyBaseUrl = proxy['url']
-            const requestCommonData = await supplyRequestCommonData(proxy)
-            
-            return Promise.all(
-                batch.map(async request => {
-                    const url = await supplyUrl(proxyBaseUrl, request)
-                    return fetch(url, requestCommonData).then(responseMapper)
-                })
-            )
-        })
-    )).flat() */
-
     const batchesPromises = []
     for (let i = 0; i < requestBatches.length; i++) {
         const batch = requestBatches[i]
@@ -39,8 +24,11 @@ async function fetchUsingProxies(requests, supplyUrl, supplyRequestCommonData, r
                 const requestPromises = []
                 for (let request of batch) {
                     const requestPromise = supplyUrl(proxyBaseUrl, request)
-                        .then(url => fetch(url, requestCommonData))
-                        .then(response => responseMapper(response))
+                        .then(url => {
+                            console.log(`Performing fetch to ${url} with requestData: ${JSON.stringify(requestCommonData)}, request: ${JSON.stringify(request)}`)
+                            return fetch(url, requestCommonData)
+                        })
+                        .then(async response => await responseMapper(response))
                     requestPromises.push(requestPromise)
                 }
                 return Promise.all(requestPromises)
@@ -48,7 +36,7 @@ async function fetchUsingProxies(requests, supplyUrl, supplyRequestCommonData, r
         batchesPromises.push(batchPromise)
     }
 
-    return Promise.all(batchesPromises).then(batches => batches.flat())
+    return Promise.all(batchesPromises).then(batches => batches.flat().filter(batch => batch.length > 0))
 }
 
 function distributeRequests(requests, numberOfBuckets) {

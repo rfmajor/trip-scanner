@@ -152,12 +152,23 @@ async function deleteApiGateway(region) {
     logger.info(`Deleting API in ${region}`)
     const apig = new APIGatewayClient({ region: region })
     return apig.send(new DeleteRestApiCommand({restApiId: proxies[region]['restApiId']}))
-        .then(() => delete proxies[region])
+        .then(response => {
+            return new Promise((resolve, reject) => {
+                if (response.$metadata.httpStatusCode === 202) {
+                    delete proxies[region]
+                    resolve()
+                } else {
+                    reject("Invalid http status: " + response.$metadata.httpStatusCode)
+                }
+            })
+        })
+        .then(() => logger.info(`Deleted API in ${region}`))
         .catch(err => logger.error(`Failed to delete proxy in region ${region}:\n`, err))
 }
 
 async function deleteApiGatewayV2(region, id) {
     const apig = new APIGatewayClient({ region: region });
+    
     return apig.send(new DeleteRestApiCommand({restApiId: id}))
 }
 
