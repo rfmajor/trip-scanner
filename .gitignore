@@ -132,5 +132,5 @@ dist
 # custom
 openAPIs.json
 trips*.json
-output*.txt
+output*.*
 cleanup.sh

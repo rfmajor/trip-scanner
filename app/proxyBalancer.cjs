@@ -5,7 +5,7 @@ const config = require('./config.cjs')
 async function fetchUsingProxies(requests, supplyUrl, supplyRequestCommonData, responseMapper) {
     const regions = Object.keys(proxies)
 
-    const maxRequests = regions.length * config.maxRequestsPerProxy
+    const maxRequests = regions.length * config.availability.maxRequests
     if (requests.length > maxRequests) {
         const skipped = requests.length - maxRequests
         logger.warn(`Too many requests submitted, skipping ${skipped} requests`)

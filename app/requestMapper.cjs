@@ -59,7 +59,7 @@ function createAvailabilityRequests(origins, destinations, startDate, plusDays) 
             const isDestinationCityMac = destination['city']['isMac']
             const destinationCode = destination['code']
 
-            return config.availabilityRequestPayload(originCode, destinationCode, isOriginCityMac, isDestinationCityMac, date)
+            return config.availability.requestPayload(originCode, destinationCode, isOriginCityMac, isDestinationCityMac, date)
         }
 
         requests.push(generatePayload(origin, destination))
@@ -77,7 +77,7 @@ function createOneWayCheapestFaresRequests(origins, destinations, startDate, end
             const originCode = origin['code']
             const destinationCode = destination['code']
 
-            return config.oneWayCheapestFaresRequestPayload(originCode, destinationCode, date, currency)
+            return config.cheapestFares.requestPayload(originCode, destinationCode, date, currency)
         }
         requests.push(generatePayload(origin, destination))
         requests.push(generatePayload(destination, origin))

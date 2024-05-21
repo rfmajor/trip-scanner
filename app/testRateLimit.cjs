@@ -1,7 +1,7 @@
 const { refreshCookies, parseCookies } = require('./cookies.cjs')
 const config = require('./config.cjs')
 
-const testUrl = 'https://www.ryanair.com/api/booking/v4/pl-pl/availability?ADT=2&TEEN=0&CHD=0&INF=0&Origin=KRK&DateOut=2024-05-10&promoCode=&IncludeConnectingFlights=false&DateIn=&FlexDaysBeforeOut=2&FlexDaysOut=2&FlexDaysBeforeIn=2&FlexDaysIn=2&RoundTrip=false&ToUs=AGREED&Destination=AGA&DestinationIsMac=false&'
+const testUrl = 'https://www.ryanair.com/api/farfnd/v4/oneWayFares/KRK/BCN/cheapestPerDay?outboundMonthOfDate=2024-08-01&currency=PLN'
 let lastBackoff = new Date()
 let requestCounter = 0
 let backoff = false
@@ -42,6 +42,52 @@ async function testRateLimit() {
     }
 }
 
+async function testRateLimit_cheapestFares() {
+    const requestData = {...config.cheapestFares.requestData}
+
+    let requestRatePerSecond = 1000
+
+    let requestsSinceLastBackoff = 0
+
+    const onBackoff = async function () {
+        console.log(`${new Date().toJSON()}: Backoff[${backoffTimeMinutes}m] activated after ${requestsSinceLastBackoff} successful responses received with request rate ${requestRatePerSecond} rpm`)
+        requestsSinceLastBackoff = 0
+        waitingForBackoff = true
+        backoffTimeMinutes += 10
+        
+        await new Promise(resolve => setTimeout(resolve, backoffTimeMinutes * 60 * 1000))
+    }
+
+   /*  while (true) {
+        waitingForBackoff = false
+        while (!waitingForBackoff) {
+            const response = await fetch(testUrl, requestData)
+            if (response.status === 200) {
+                requestsSinceLastBackoff += 1
+                console.log(`${new Date().toJSON()}: Request count: ${requestsSinceLastBackoff}`)
+            } else {
+                await onBackoff()
+            }
+            await new Promise(resolve => setTimeout(resolve, 1000 / requestRatePerSecond))
+        }
+    } */
+
+    while (true) {
+        waitingForBackoff = false
+        while (!waitingForBackoff) {
+            fetch(testUrl, requestData).then(response => {
+                if (response.status === 200) {
+                    requestsSinceLastBackoff += 1
+                    console.log(`${new Date().toJSON()}: Request count: ${requestsSinceLastBackoff}`)
+                } else {
+                    console.log(requestCounter)
+                }
+            })
+            await new Promise(resolve => setTimeout(resolve, 1000 / requestRatePerSecond))
+        }
+    }
+}
+
 
 async function testFunction() {
     return new Promise(resolve => {
@@ -69,4 +115,4 @@ async function testFunction() {
 
 
 
-module.exports = { testRateLimit }
+module.exports = { testRateLimit, testRateLimit_cheapestFares }

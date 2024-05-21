@@ -6,8 +6,8 @@ const { fetchUsingProxies } = require('./proxyBalancer.cjs')
 async function getOneWayCheapestFaresData(requests) {
     return fetchUsingProxies(
         requests,
-        async (proxyUrl, request) => addRequestParameters(proxyUrl + config.oneWayCheapestFaresUrl(request['Origin'], request['Destination']), getDictWithKeys(request, ["outboundMonthOfDate", "currency"])),
-        async proxy => ({ ...config.oneWayCheapestFaresRequestData }),
+        async (proxyUrl, request) => addRequestParameters(proxyUrl + config.cheapestFares.url(request['Origin'], request['Destination']), getDictWithKeys(request, ["outboundMonthOfDate", "currency"])),
+        async proxy => ({ ...config.cheapestFares.requestData }),
         async response => {
             if (response) {
                 const body = await response.json()
@@ -22,10 +22,10 @@ async function getOneWayCheapestFaresData(requests) {
 async function getAvailabilityData(availabilityRequests) {
     return fetchUsingProxies(
         availabilityRequests,
-        async (proxyUrl, request) => addRequestParameters(proxyUrl + config.availabilityUrl, request),
+        async (proxyUrl, request) => addRequestParameters(proxyUrl + config.availability.url, request),
         async proxy => {
-            const cookieUrl = proxy['url'] + config.cookieUrl
-            const requestData = { ...config.availabilityRequestData }
+            const cookieUrl = proxy['url'] + config.availability.cookieUrl
+            const requestData = { ...config.availability.requestData }
             requestData['headers']['cookie'] = await refreshCookies(cookieUrl)
             return requestData
         },
